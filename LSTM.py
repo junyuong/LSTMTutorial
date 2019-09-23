@@ -23,6 +23,7 @@ x_train = sequence.pad_sequences(x_train, maxlen = 100)
 x_test = sequence.pad_sequences(x_test, maxlen=100)
 
 #모델의 설정
+
 model = Sequential()
 
 model.add(Embedding(5000,100)) #단어를 의미론적 기하공간에 매핑할 수 있도록 벡터화 시킨다.
